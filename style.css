@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-style: sans-serif;
+}
+header{
+    width: 100%;
+}
+.logo{
+    width: 100px;
+    height: 50px;
+}
+a.logo-anchor{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+a:hover{
+    color: blue;
+}
+.logo a img{
+    width: 80%;
+    /* height: 50px; */
+}
+.olx-logo a{
+    /* width: 100%;
+    height: 100%; */
+    font-size: x-large;
+    font-weight: 900;
+}
+div.second-panel{
+    /* width: 100%;
+    height: 60px; */
+    padding: 8px;
+}
+div.location{
+    width: 25%;
+}
+.location-icon{
+    width: 8%;
+}
+.location-icon i{
+    font-size: 1.2rem;
+}
+.select-location{
+    width: 100%;
+}
+div.search{
+    width: 55%;
+    height: 50px;
+}
+.search-input{
+    width: 95%;
+}
+.search-icon i{
+    font-size: 1.2rem;
+    color: white;
+}
+div.sell{
+    width: 8%;
+    padding: 0.5rem;
+    text-align: center;
+    border: 6px solid;
+    border-radius: 25px; /* Ensures the border is rounded-pill */
+    border-image: linear-gradient(to right, orange, cyan, blue) 1;
+}
+/* .nav-li{
+    height: 60px;
+} */
+li{
+    list-style: none;
+    margin-right: 25px;
+}
+a.list{
+    color: #002F34;
+    text-decoration: none;
+}
+a.list:hover{
+    color: #1ca8b8;
+    font-weight: 100;
+}
+/* slider */
+.panel-slide{
+    padding: 10px;
+}
+/* categories */
+.categories{
+    padding: 20px;
+}
+div.cat-info{
+    /* width: 12%; */
+    flex: 1 0 13%; /* This allows 4 items per row on large screens */
+    text-align: center;
+    margin-bottom: 20px;
+}
+.cat-logo{
+    /* height: 100px;
+    width: 100px; */
+
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+a.cat-anchor{
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+}
+/* <!-- card Phones --> */
+span i{
+    float: right;
+}
+a{
+    text-decoration: none;
+    color: #002F34;
+}
+img.card-img-top{
+    height: 150px;
+}
+/* footer */
+footer{
+    background-color: #EBEEEF;
+    padding: 20px 0;
+}
+div.foot{
+
+}
+ul p{
+    font-weight: bolder;
+    margin-top: 5px;
+}
+div.social{
+    margin-right: 25px;
+}
+div.foot-panel{
+    background-color: #002F34;
+}
+/* 
+ABOUT US */
+span.text-help{
+    font-weight: bolder;
+    font-size: 18px;
+}
+.search-about{
+    width: 300px;
+}
+.searchIcon i{
+    font-size: 1.2rem;
+    color: #002F34;
+}
+button.searchIcon{
+    border: none;
+    background-color: #ffffff;
+}
+.about-input{
+    border: white;
+    width: 280px;
+}
+h2.abouthead{
+    font-size: 35px;
+    font-weight: 600;
+
+}
+div.line{
+    border-right: 1px solid rgb(85, 80, 80);
+    height: 20px;
+    position: relative;
+    /* margin-right: 10px; */
+}
+div.foot-about{
+    background-color: #d9dddf;
+    margin-top: 60px;
+}
+.foot-about ul{
+    margin: 0;
+}
+li a.foot-a{
+    color: #5A6C7D;
+}
+.foot2{
+    background-color: #2875b4;
+    padding: 10px;
+    display: block;
+}
+.foot2 p{
+    align-items: center;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px){
+    .second-panel{
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .second-panel > div {
+        width: 90%;
+        display: block;
+    }
+    .second-panel .search input {
+        width: calc(100% - 40px); /* Adjust width considering the button width */
+    }
+
+    .second-panel .search button {
+        width: 40px;
+    }
+    div .sell{
+        width: 15%;
+        align-self: start;
+
+    }
+}
